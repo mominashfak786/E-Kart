@@ -31,7 +31,10 @@ const ProductList = () => {
                 />
                 <div className="card-body">
                   <h5 className="card-title">{product.title}</h5>
-                  <ul className="list-unstyled">
+                    <ul className="list-unstyled">
+                    <li>
+                  <strong>Description:</strong> {product.description}
+                </li>
                     <li>
                       <strong>Price:</strong> ${product.price}
                     </li>
