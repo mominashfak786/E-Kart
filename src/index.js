@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
 import "./index.css";
 import HomePage from "./Components/HomePage";
 import Navbar from "./Components/Navbar";
@@ -10,10 +9,10 @@ import ProductDetail from "./Components/ProductDetail";
 import ProductsByCategory from "./Components/ProductsByCategory";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-export default function Index() {
+function App() {
   return (
     <BrowserRouter>
-      <Navbar /> {/* Move the Navbar outside the Routes */}
+      <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/products" element={<ProductList />} />
@@ -28,5 +27,4 @@ export default function Index() {
   );
 }
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Index />);
+ReactDOM.render(<App />, document.getElementById("root"));
