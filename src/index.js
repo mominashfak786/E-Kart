@@ -16,7 +16,7 @@ export default function Index() {
       <Navbar /> {/* Move the Navbar outside the Routes */}
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/Products" element={<ProductList />} />
+        <Route path="/products" element={<ProductList />} />
         <Route path="/products/:id" element={<ProductDetail />} />
         <Route
           path="/products/category/:category_name"
